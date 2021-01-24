@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+    client:
+        build:
+            context: .
+        command: yarn start
+
+        ports:
+          - "3000:3000"
+        volumes:
+            - .:/home/node/client
+            - node_modules:/home/node/node_modules
+
+volumes:
+    node_modules:
