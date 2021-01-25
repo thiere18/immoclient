@@ -13,7 +13,7 @@ export default function Login() {
     <div className="container">
       <div className="row">
           <div className="col">
-            <h1 className="display-1 text-center">Gss</h1>
+            <h1 className="display-1 text-center">j</h1>
         </div>
           </div>
           <div className="row ">

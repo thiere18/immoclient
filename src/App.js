@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './component/style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //pages
+import Header from './component/Header.jsx';
 import Home from './component/Home.jsx';
 import Login from './component/Login.jsx';
 import Depot from './component/Depot.jsx';
@@ -18,9 +19,11 @@ function App() {
   return (
     <div className="App">
       <Router>
+      <Header/>
         <Switch>
-        <Route exact path="/" component={Login}/>
-          <Route path="/dashboard" component={Home} />
+        <Route exact path="/" component={Home}/>
+        <Route exact ="/login" component={Login}/>
+          {/* <Route path="/d" component={Header} /> */}
           <Route path="/Dette Clients" component={Client} />
           <Route path="/depots" component={Depot} />
           <Route path="/profile" component={Profile} />
