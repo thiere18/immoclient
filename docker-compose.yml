@@ -10,7 +10,7 @@ services:
         ports:
           - "3000:3000"
         volumes:
-            - .:/home/node/client
+            - .:/usr/src/client
             - node_modules:/home/node/node_modules
 
 volumes:

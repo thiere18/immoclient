@@ -1,7 +1,7 @@
 
 FROM node:15.3.0
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/client
 
 COPY ./package.json ./
 
