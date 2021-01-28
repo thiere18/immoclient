@@ -15,16 +15,18 @@ import Profile from './component/Profile.jsx';
 import Facture from './component/Facture.jsx';
 import Client from './component/Client.jsx';
 import Fournisseur from './component/Fournisseur.jsx';
+import test from './component/test.jsx';
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <Router>
       <Header/>
         <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact ="/login" component={Login}/>
-          {/* <Route path="/d" component={Header} /> */}
+          <Route path="/d" component={Header} />
           <Route path="/Dette Clients" component={Client} />
+          <Route path="/tests" component={test}/>
           <Route path="/depots" component={Depot} />
           <Route path="/profile" component={Profile} />
           <Route path="/facture" component={Facture} /> 
@@ -32,8 +34,8 @@ function App() {
           <Route path="/Dette Fournisseur" component={Fournisseur} />
           <Route path="*" component={NotFound} />
 
-         {/* <Route path="/fournisseurs " component={Fournisseur} />  */}
-
+         <Route path="/fournisseurs " component={Fournisseur} /> 
+{/*  */}
       </Switch>
     </Router>
     </div>
